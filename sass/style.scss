@@ -1,0 +1,9 @@
+img {
+  image-rendering: -webkit-optimize-contrast; /* Safari */
+  image-rendering: optimizeQuality; /* Non-Safari */
+  image-rendering: pixelated;
+}
+body {
+  background-color: black;
+  color: white;
+}
