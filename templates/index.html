@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<img src="/images/mfnz.png" width="350" height="160" draggable="false" alt="mfnz aka. djmoffnz">
+{% set mfnz_url = "/images/mfnz.png" %}
+{% set mfnz = get_image_metadata(path=mfnz_url) %}
+<img src={{ mfnz_url }} width={{ mfnz.width * 8 }} draggable="false" alt="mfnz aka. djmoffnz">
 <p>i like designing things</p>
 <p>generally pretty creative in most areas, but i always forget to
    upload my stuff anywhere. i'm gonna start doing that soon though.</p>
